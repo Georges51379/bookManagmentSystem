@@ -1,0 +1,149 @@
+/*START FORM STYLE*/
+.container{
+  background-color: #ECEAE4;
+  width: 50%;
+}
+.container:hover{
+  background-color: #C6DBDA;
+  transform: scale(1.1);
+  transition: 1s;
+  border-radius: 5px;
+  animation: animateBorder 10s infinite;
+}
+.titlewrapper .title{
+  text-transform: capitalize;
+  font-family: sans-serif;
+  transition: 1s;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  font-weight: 900;
+  margin-top: 2%;
+}
+.titlewrapper .subtitle{
+  margin-top: 2%;
+}
+.titlewrapper .subtitle-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: blue;
+}
+.subtitle_wrapper{
+  display: inline-flex;
+}
+table{
+  background-color: #116466;
+}
+.titlewrapper .subtitle-link:hover{
+  color: black;
+}
+.wrapper .msgwrapper .positivemsg{
+  color: green;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.wrapper .msgwrapper .negativemsg{
+  color: red;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.adminform_label{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+  margin-bottom: 2%;
+  text-transform: capitalize;
+}
+.adminform_input, .adminform_select{
+  border-radius: 5px;
+  padding: 0.5%;
+  margin-bottom: 2%;
+}
+.adminform_textarea{
+  text-transform: capitalize;
+  margin-bottom: 2%;
+}
+.lnks, .lnk{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #116466;
+}
+.lnks:hover{
+  color: red;
+}
+.adminform_btn, .submitBtn, .check-reset-otp{
+  color: gold;
+  background-color: #2C3531;
+  padding: 1%;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+.adminform_btn:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+.submitBtn:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+.check-reset-otp:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+/*END FORM STYLE*/
+
+
+/*BORDER ANIMATION*/
+@keyframes animateBorder{
+  0%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #2C3531;
+    border-bottom: 3px solid #D1E8E2;
+    border-left: 3px solid #474747;
+  }
+  20%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #D1E8E2;
+    border-bottom: 3px solid #2C3531;
+    border-left: 3px solid #474747;
+
+  }
+  40%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #2C3531;
+    border-bottom: 3px solid #474747;
+    border-left: 3px solid #D1E8E2;
+
+  }
+  60%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #474747;
+    border-bottom: 3px solid #D1E8E2;
+    border-left: 3px solid #2C3531;
+
+  }
+  80%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #D1E8E2;
+    border-bottom: 3px solid #474747;
+    border-left: 3px solid #2C3531;
+  }
+  100%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #474747;
+    border-bottom: 3px solid #2C3531;
+    border-left: 3px solid #D1E8E2;
+  }
+}

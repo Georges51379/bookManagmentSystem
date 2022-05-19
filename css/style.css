@@ -1,0 +1,631 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logout-lnk, .name{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  background-color: #116466;
+  padding: 1%;
+}
+.logout-lnk:hover{
+  color: red;
+}
+/*START FORM STYLE*/
+.container{
+  background-color: #ECEAE4;
+  width: 50%;
+}
+.container:hover{
+  background-color: #C6DBDA;
+  transform: scale(1.1);
+  transition: 1s;
+  border-radius: 5px;
+  animation: animateBorder 10s infinite;
+}
+.titlewrapper .title{
+  text-transform: capitalize;
+  font-family: sans-serif;
+  transition: 1s;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  font-weight: 900;
+  margin-top: 2%;
+}
+.titlewrapper .subtitle{
+  margin-top: 2%;
+}
+.titlewrapper .subtitle-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: blue;
+}
+.subtitle_wrapper{
+  display: inline-flex;
+}
+table{
+  background-color: #116466;
+}
+.titlewrapper .subtitle-link:hover{
+  color: black;
+}
+.wrapper .msgwrapper .positivemsg{
+  color: green;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.wrapper .msgwrapper .negativemsg{
+  color: red;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.adminform_label{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+  margin-bottom: 2%;
+  text-transform: capitalize;
+}
+.adminform_input, .adminform_select{
+  border-radius: 5px;
+  padding: 0.5%;
+  margin-bottom: 2%;
+}
+.adminform_textarea{
+  text-transform: capitalize;
+  margin-bottom: 2%;
+}
+.lnks, .lnk{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #116466;
+}
+.lnks:hover{
+  color: red;
+}
+.adminform_btn, .submitBtn, .check-reset-otp{
+  color: gold;
+  background-color: #2C3531;
+  padding: 1%;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+.adminform_btn:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+.submitBtn:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+.check-reset-otp:hover{
+  cursor: pointer;
+  background-color: GREEN;
+  color: #2C3531;
+  transform: scale(1.2);
+  transition: 1s;
+  border-radius: 5px;
+}
+/*END FORM STYLE*/
+
+
+/*BORDER ANIMATION*/
+@keyframes animateBorder{
+  0%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #2C3531;
+    border-bottom: 3px solid #D1E8E2;
+    border-left: 3px solid #474747;
+  }
+  20%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #D1E8E2;
+    border-bottom: 3px solid #2C3531;
+    border-left: 3px solid #474747;
+
+  }
+  40%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #2C3531;
+    border-bottom: 3px solid #474747;
+    border-left: 3px solid #D1E8E2;
+
+  }
+  60%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #474747;
+    border-bottom: 3px solid #D1E8E2;
+    border-left: 3px solid #2C3531;
+
+  }
+  80%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #D1E8E2;
+    border-bottom: 3px solid #474747;
+    border-left: 3px solid #2C3531;
+  }
+  100%{
+    border-top: 3px solid #116466;
+    border-right: 3px solid #474747;
+    border-bottom: 3px solid #2C3531;
+    border-left: 3px solid #D1E8E2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainav_header {
+  background-color: #116466;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.mainav_header .mainnav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.mainav_header .mainnav_li .mainnav_links{
+  display: block;
+  color: black;
+  background-color: #116466;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.mainav_header .mainnav_li .mainnav_links:hover,
+.mainav_header .menu_btn:hover {
+  background-color: black;
+  color: #116466;
+}
+
+.mainav_header .logo{
+  color: #116466;
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  margin-left: 3%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: sans-serif;
+  background-color: black;
+  transform: skew(30deg);
+  height: 100%;
+  width: auto;
+}
+.mainav_header .logo .logo_link{
+  color: #116466;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* menu */
+
+.mainav_header .mainnav_list {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.mainav_header .menu_icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.mainav_header .menu_icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.mainav_header .menu_icon .navicon:before,
+.mainav_header .menu_icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.mainav_header .menu_icon .navicon:before {
+  top: 5px;
+}
+
+.mainav_header .menu_icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.mainav_header .menu_btn {
+  display: none;
+}
+
+.mainav_header .menu_btn:checked ~ .mainnav_list {
+  max-height: 340px;
+}
+
+.mainav_header .menu_btn:checked ~ .menu_icon .navicon {
+  background: transparent;
+}
+
+.mainav_header .menu_btn:checked ~ .menu_icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.mainav_header .menu_btn:checked ~ .menu_icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.mainav_header .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:before,
+.mainav_header .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px){
+    .mainav_header .mainnav_list{
+        background-color: #116466;
+    }
+    .mainav_header .logo{
+      height: auto;
+      padding: 30px 20px;
+
+    }
+    .mainav_header .mainnav_li .mainnav_links {
+    padding: 15px;
+    color: black;
+    border-bottom: 1px dotted #D1E8E2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu_wrapper{
+        background: #116466;
+        height: 55px;
+        line-height: 55px;
+        width: 100%;
+    }
+  .mainav_header .mainnav_li {
+    float: left;
+  }
+    .mainav_header .logo{
+      height: auto;
+    }
+  .mainav_header .mainnav_li .mainnav_links {
+    color: black;
+    padding: 0px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+  .mainav_header .mainnav_list {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .mainav_header .menu_icon {
+    display: none;
+  }
+}
+
+
+.products_wrapper{
+  width: 33%;
+  background-color: #116466;
+  display: inline-block;
+  box-shadow: 4px 4px 5px cyan;
+}
+.products_wrapper .product{
+  position: relative;
+  border-radius: 3px;
+  width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+}
+.products_wrapper .product .imgprod{
+  max-width: 256px;
+  image-resolution: from-image;
+  image-rendering: pixelated;
+  height: 256px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.product:hover .imgprod{
+  transform: scale(1.1);
+}
+.products_wrapper .product .product_information{
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  background: #116466;
+  padding: 10px 20px 22px 20px;
+  box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.products_wrapper .product:hover .product_information{
+  bottom: 0;
+}
+.product .product_information .row,
+.product_information .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.product_information .row .prod_details .product_name{
+  font-size: 22px;
+  font-weight: 500;
+  width: 89%;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 2%;
+}
+.productname_link{
+  animation: productsLED infinite 10s;
+  text-decoration: none;
+}
+.product_information .row .prod_details .price{
+  color: black;
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.product_information .row .prod_details .price .price_before_discount{
+  color: red;
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-style: oblique;
+}
+.product_information .row .product_views{
+  color: #2C3531;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product_information .product_action{
+  margin-top: 20px;
+}
+.product_information .product_action .btn{
+  width: 100%;
+  padding: 9px 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 2px solid #116466;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  animation: productsLED infinite 10s;
+}
+.product_action .btn:first-child{
+  color: black;
+  margin-right: 10px;
+  background: #116466;
+}
+.btn:first-child:hover{
+  color: black;
+  animation: productsLED infinite 10s;
+}
+.product_action .btn:last-child{
+  color: black;
+  margin-left: 10px;
+  background: #116466;
+}
+.btn:last-child:hover{
+    color: black;
+    animation: productsLED infinite 10s;
+}
+
+
+/*PRODUCT PAGE DESIGN*/
+.products_section{
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  background-color: #116466;
+}
+.products_section .section_title{
+  width: 100%;
+  color: darkblue;
+  padding: 5%;
+  float: left;
+  text-decoration: overline;
+  text-decoration-style: dotted;
+  text-decoration-color: black;
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: lightblue;
+  text-transform: capitalize;
+  text-overflow: clip;
+}
+/*PRODUCT PAGE DESIGN*/
+
+/*START SUBCATEGORY SIDE NAVBAR*/
+.subcategory_wrapper{
+  margin-top: 2%;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #116466;
+}
+.subcategory_wrapper .subcategory_title{
+  text-transform: uppercase;
+  background-color: black;
+  color: #116466;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.subcategory_title{
+  border-top-right-radius: 5px;
+}
+.subcategory_link{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  padding: 0.3%;
+}
+.subcategory_link:hover{
+  color: white;
+}
+
+.cat_name_wrapper{
+  color: #116466;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  margin-left: 5%;
+  background-color: #116466;
+  max-width: 10%;
+  color: black;
+  border-top-right-radius: 5px;
+}
+.subcat_title{
+  margin-top: 2%;
+  color: #116466;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  margin-left: 5%;
+  background-color: #116466;
+  max-width: 10%;
+  color: black;
+  border-top-right-radius: 5px;
+}
+/*END SUBCATEGORY SIDE NAVBAR*/
+
+@keyframes productName{
+  0%{
+    color: red;
+    transform: scale(1.1);
+  }
+  20%{
+    color: green;
+    transform: scale(1.0);
+  }
+  40%{
+    color: red;
+    transform: scale(1.1);
+  }
+  60%{
+    color: green;
+    transform: scale(1.0);
+  }
+  80%{
+    color: red;
+    transform: scale(1.1);
+  }
+  100%{
+    color: green;
+    transform: scale(1.0);
+  }
+}
+
+
+@keyframes productsLED {
+  0%{
+    color: red;
+  }
+  20%{
+    color: yellow;
+  }
+  40%{
+    color: green;
+  }
+  60%{
+    color: cyan;
+  }
+  80%{
+    color: purple;
+  }
+  100%{
+    color: pink;
+  }
+}
+
+
+/*BOOK DETAILS SECTION STYLE*/
+.detail-wrapper{
+  margin-top: 4%;
+  background-color: #232323;
+  font-family: 'Times New Roman', Times, serif;
+}
+.imgdetail{
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+.information{
+  color: #C6DBDA;
+  padding: 2%;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.information h2{
+  color: #116466;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 1%;
+}
+.information .price-wrapper{
+  display: inline-flex;
+  padding: 1%;
+}
+.information .price-wrapper .price{
+  text-decoration: line-through;
+  color: red;
+}
+.availability{
+  color:rgba(255, 255, 255, 0.2);
+  text-transform: capitalize;
+}
+/*END BOOK DETAILS SECTION STYLE*/

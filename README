@@ -1,0 +1,44 @@
+This is the README file that will contains some necessary information and explanation.
+
+First the Admin Panel with the corresponding credentials:
+              email: boutros.georges513@gmail.com
+              password: 1234567890
+In the Admin page, he/she can CRUD categories, subcategories (after creating each one, a token will be created respectively).
+Plus, Admin can CRUD books, authors and users. While adding users and authors, a password hash function will be executed to hash their passwords.
+Moreover, Admin can set the book status either to published or keep it as drafted. Because authors when adding their books, they add them with one status only which is the
+drafted status. In order to be published, the Admin should approve and change their status to published. Also, the admin has the ability to make the book featured or not to
+be seen under the featured section in the user page.
+Finally, in the Dashboard, Admin have 3 inline blocks which contains: first the total number of Authors, Second the total number of Users, and finally the total number of books
+Then there is a dropdown under these which will allow the Admin when clicking it to display all the available authors in his web. After selecting a specific author, it will show the books
+written by that author.
+Note: Every component has a field that called status which will be either 0 (inactive) or 1 (Active).
+
+
+
+Second, the Author Panel with the corresponding credentials:
+              email: boutros.georges513@gmail.com
+              password: 7778889994
+              email: rowa@gmail.com
+              password: 99999999999
+              email: leigh@gmail.com
+              password: 24242424242
+In the author page, he/she can CRUD books. While adding a new book with its corresponding cover image, a file with the name of the book will be created in his root file
+under the productimages folder.
+As listed before, the author can only add a status to its books to drafted only. The admin should change it to published in order to be seen in the user page.
+In the dashboard section, the author will be able to see which of his books are being featured.
+Note: in the books section, the author can only CRUD his own books and see his own books. He can not see or CRUD other authors books.
+
+
+
+Finally, the user page with the corresponding credentials:
+              email : boutros.georges513@gmail.com
+              password: 5557779991
+The user can check the books either in the home page, or for more detailed view, he can navigate to the categories and even their subcategories.
+All the categories will be available next to the Home link.
+Categories and subcategories are being linked by tokens.
+
+Note: This is just a simple project just to show you that I know about front end and back end which means full stack, and this work has been made by me without the help of google
+or any other sites or people.
+Developing and coding is my PASSION but the time to learn two new languages and frameworks with my work with Maaloomatiia is really something a little bit hard.
+I will make until tomorrow a CRUD application using Angular and Firebase. But I hope you see my PASSION and enthusiast towards Developing.
+I know that FAST AND FURIOUS and INSIDIOUS are not books, but I like horror and action movies and hate books. So sorry for not including books as cover image.
