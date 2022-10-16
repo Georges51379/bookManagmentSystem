@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2022 at 09:13 AM
+-- Generation Time: Oct 15, 2022 at 03:32 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.24
 
@@ -72,7 +72,7 @@ CREATE TABLE `authors` (
 
 INSERT INTO `authors` (`id`, `name`, `email`, `password`, `birthDate`, `authorBio`, `code`, `status`, `authorStatus`, `registrationDate`, `updateDate`) VALUES
 (1, 'Gary Scott Thompson', 'boutros.georges@aut.edu', '$2y$10$ExyDTT6wXT6EIQ6U/HYsXOCkPcCcl/hPk47A6HqMJnFnmWTWXSS0a', '2020-04-23', 'author of fast and furious series', 0, 'verified', 1, '2022-05-02 13:54:56', '04-05-2022 09:46:29 AM'),
-(2, 'Rowan Sebastian Atkinson', 'rowan@gmail.com', '$2y$10$yYhCEVQ48.6/YCqEc5QgyOu9YmmAmE1Jl1vJgoSc0pHzlfO5JcQIG', '1977-06-07', '     English comedian actor and writer', 359537, 'verified', 1, '2022-05-04 07:02:44', '04-05-2022 10:12:25 AM'),
+(2, 'Rowan Sebastian Atkinson', 'rowan@gmail.com', '$2y$10$yYhCEVQ48.6/YCqEc5QgyOu9YmmAmE1Jl1vJgoSc0pHzlfO5JcQIG', '1977-06-07', '     English comedian actor and writer', 531296, 'verified', 1, '2022-05-04 07:02:44', '04-05-2022 10:12:25 AM'),
 (3, 'Leigh Whannell', 'leigh@gmail.com', '$2y$10$qMlytC4i6HhcPM4a9TgVTeOFyFRx3f2L3dJD6xZT7hSyOyfpgsqwS', '1980-09-22', '    Australian screenwriter, actor, film director and producer', 965236, 'verified', 1, '2022-05-04 07:08:24', '');
 
 -- --------------------------------------------------------
